@@ -30,13 +30,13 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
           <div className="relative flex min-h-screen flex-col bg-background">
             <Header />
-            <main className="flex-1">{children}</main>
+            <main className="flex-1 bg-gray-100">{children}</main>
             <Footer />
           </div>
           <Toaster position="bottom-right" richColors closeButton/>

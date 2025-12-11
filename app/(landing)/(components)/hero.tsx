@@ -1,33 +1,22 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative h-[600px] flex items-center justify-center text-center text-white">
+    <section className="relative md:h-[80vh] text-white pt-20">
       <Image
-        src="/images/hero-bg.jpg"
+        src="/images/hero-bg.webp"
         alt="Background"
         layout="fill"
         objectFit="cover"
-        className="absolute z-0 dark:invert"
+        className="absolute z-0"
       />
-      <div className="absolute inset-0 bg-black/50 z-10" />
-      <div className="relative z-20 space-y-6 px-4">
-        <h1 className="text-5xl md:text-7xl font-bold">
-          Advancing Accountability and Inclusivity
-        </h1>
-        <p className="text-lg md:text-xl max-w-3xl mx-auto">
-          Punch is Nigeria&apos;s most widely known and respected news brand,
-          committed to factual, actionable journalism.
-        </p>
-        <div className="space-x-4">
-          <Button asChild size="lg">
-            <Link href="/about">Learn More</Link>
-          </Button>
-          <Button asChild variant="secondary" size="lg">
-            <Link href="/contact">Contact Us</Link>
-          </Button>
+      <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/40 to-transparent z-10" />
+      <div className="relative z-20 flex flex-col justify-end h-full pb-20 container max-w-screen-2xl mx-auto px-4 md:px-16">
+        <div className="max-w-3xl space-y-3">
+          <h1 className="text-2xl md:text-5xl font-bold leading-tight">
+            Informing and empowering a diverse audience for more than five
+            decades
+          </h1>
         </div>
       </div>
     </section>

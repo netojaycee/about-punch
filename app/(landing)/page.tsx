@@ -1,15 +1,19 @@
-import FeaturedNews from "@/app/(landing)/(components)/featured-news";
+import CsrCard from "./(components)/csr-card";
 import Hero from "@/app/(landing)/(components)/hero";
-import Newsletter from "@/app/(landing)/(components)/newsletter";
-import Values from "./(components)/values";
+import InfoCards from "./(components)/info-cards";
+import Leadership from "./(components)/leadership";
+import Milestones from "./(components)/milestones";
+import QuickFacts from "./(components)/quick-facts";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Values />
-      <FeaturedNews />
-      <Newsletter />
+      <QuickFacts />
+      <InfoCards />
+      <Leadership />
+      <CsrCard />
+      <Milestones />
     </>
   );
 }

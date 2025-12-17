@@ -9,7 +9,7 @@ const CsrCard = () => {
         <div className="grid lg:grid-cols-3 gap-8 items-start">
           {/* CSR Foundation Card */}
           <div className="lg:col-span-1">
-            <Card className="bg-red-500 text-white rounded">
+            <Card className="bg-primary text-white rounded">
               <CardHeader>
                 <CardTitle className="text-2xl">CSR Foundation</CardTitle>
               </CardHeader>

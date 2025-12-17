@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 
 const members = [
@@ -30,20 +30,21 @@ const BoardMembers = () => {
       <div className="container mx-auto max-w-5xl px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {members.map((member) => (
-            <Card key={member.name}>
-              <div className="relative h-60 w-full">
+           <Card key={member.name} className="overflow-hidden rounded-2xl p-2">
+              <div className="relative h-48 w-full bg-muted">
                 <Image
                   src={member.image}
                   alt={member.name}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-t-lg"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 20vw"
+                  priority
                 />
               </div>
-              <CardContent className="p-4 text-center">
-                <h3 className="text-lg font-bold">{member.name}</h3>
-                <p className="text-sm text-muted-foreground">{member.title}</p>
-              </CardContent>
+              <CardHeader className="px-2">
+                <CardTitle>{member.name}</CardTitle>
+                <p className="text-muted-foreground">{member.title}</p>
+              </CardHeader>
             </Card>
           ))}
         </div>

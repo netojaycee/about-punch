@@ -15,7 +15,7 @@ const navLinks = [
   { href: "/careers", label: "Careers" },
   { href: "/events", label: "Events" },
   { href: "/press", label: "Press" },
-  { href: "/contact", label: "Contact" },
+  { href: "https://punchng.com/contact/", label: "Contact" },
 ];
 
 const Header = () => {

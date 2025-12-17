@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/60 z-10" />
       <div className="relative z-20 space-y-6 px-4">
         <h1 className="text-5xl md:text-6xl font-bold">
-          History & Milestones
+          History, Milestones & Awards
         </h1>
       </div>
     </section>
